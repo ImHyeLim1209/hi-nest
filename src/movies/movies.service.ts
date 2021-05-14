@@ -3,6 +3,8 @@ import { CreateMovieDTO } from './dto/create-movie.dto';
 import { UpdateMovieDTO } from './dto/update-movie.dto';
 import { Movie } from './entities/movie.entity';
 
+//inject: 주입하다.
+//movies.modules에 의해 movies.service파일은 controller에 주입되고 있음.
 @Injectable()
 export class MoviesService {
   private movies : Movie[] = [];
